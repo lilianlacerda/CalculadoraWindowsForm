@@ -21,22 +21,22 @@ namespace CalculadoraWindowsForm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSoma_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSubtracao_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnDivisao_Click(object sender, EventArgs e)
         {
 
         }

@@ -39,7 +39,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(154, 131);
+            textBox1.Location = new Point(45, 50);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(306, 131);
+            textBox2.Location = new Point(221, 50);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
@@ -55,48 +55,48 @@
             // 
             // button1
             // 
-            button1.Location = new Point(154, 230);
+            button1.Location = new Point(45, 148);
             button1.Name = "button1";
             button1.Size = new Size(125, 29);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "Soma";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += btnSoma_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(306, 230);
+            button2.Location = new Point(221, 148);
             button2.Name = "button2";
             button2.Size = new Size(125, 29);
             button2.TabIndex = 3;
-            button2.Text = "button2";
+            button2.Text = "Subtração";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += btnSubtracao_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(154, 304);
+            button3.Location = new Point(45, 217);
             button3.Name = "button3";
             button3.Size = new Size(125, 29);
             button3.TabIndex = 4;
-            button3.Text = "button3";
+            button3.Text = "Multiplicação";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += btnMultiplicacao_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(306, 304);
+            button4.Location = new Point(221, 217);
             button4.Name = "button4";
             button4.Size = new Size(125, 29);
             button4.TabIndex = 5;
-            button4.Text = "button4";
+            button4.Text = "Divisão";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4.Click += btnDivisao_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(268, 187);
+            label1.Location = new Point(168, 100);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 450);
+            ClientSize = new Size(453, 282);
             Controls.Add(label1);
             Controls.Add(button4);
             Controls.Add(button3);
