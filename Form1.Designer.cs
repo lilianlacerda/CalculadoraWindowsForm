@@ -35,6 +35,7 @@
             button3 = new Button();
             button4 = new Button();
             label1 = new Label();
+            button6 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -96,17 +97,28 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(168, 100);
+            label1.Location = new Point(158, 99);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(75, 20);
             label1.TabIndex = 6;
-            label1.Text = "label1";
+            label1.Text = "Resultado";
+            // 
+            // button6
+            // 
+            button6.Location = new Point(134, 275);
+            button6.Name = "button6";
+            button6.Size = new Size(125, 29);
+            button6.TabIndex = 8;
+            button6.Text = "C";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += resetarCalculo_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(453, 282);
+            ClientSize = new Size(452, 316);
+            Controls.Add(button6);
             Controls.Add(label1);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -129,5 +141,6 @@
         private Button button3;
         private Button button4;
         private Label label1;
+        private Button button6;
     }
 }

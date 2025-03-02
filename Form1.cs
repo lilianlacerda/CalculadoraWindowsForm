@@ -53,6 +53,11 @@ namespace CalculadoraWindowsForm
             ValidarCampos();
         }
 
+        private void resetarCalculo_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private static float Somar(float numero1, float numero2)
         {
             float resultado = numero1 + numero2;
@@ -89,7 +94,7 @@ namespace CalculadoraWindowsForm
         private void ValidarCampos()
         {
 
-            if(string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
                 label1.Text = ("Preencha os campos corretamente!");
             }
