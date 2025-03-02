@@ -43,6 +43,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -50,6 +51,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
@@ -59,6 +61,7 @@
             button1.TabIndex = 2;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -68,6 +71,7 @@
             button2.TabIndex = 3;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -77,6 +81,7 @@
             button3.TabIndex = 4;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -86,6 +91,7 @@
             button4.TabIndex = 5;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // label1
             // 
