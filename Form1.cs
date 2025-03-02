@@ -31,7 +31,7 @@ namespace CalculadoraWindowsForm
 
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
-            
+            ConverterValoresFloat();
             resultado = Subtrair(numero1, numero2);
             label1.Text = $"{numero1} - {numero2} = {resultado}";
             ValidarCampos();
@@ -39,6 +39,7 @@ namespace CalculadoraWindowsForm
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
+            ConverterValoresFloat();
             resultado = Multiplicar(numero1, numero2);
             label1.Text = $"{numero1} * {numero2} = {resultado}";
             ValidarCampos();
@@ -46,6 +47,7 @@ namespace CalculadoraWindowsForm
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
+            ConverterValoresFloat();
             resultado = Dividir(numero1, numero2);
             label1.Text = $"{numero1} / {numero2} = {resultado}";
             ValidarCampos();
@@ -77,13 +79,17 @@ namespace CalculadoraWindowsForm
 
         private void ConverterValoresFloat()
         {
-            numero1 = float.Parse(textBox1.Text);
-            numero2 = float.Parse(textBox2.Text);
+            if (!string.IsNullOrEmpty(textBox1.Text) || !string.IsNullOrEmpty(textBox2.Text))
+            {
+                numero1 = float.Parse(textBox1.Text);
+                numero2 = float.Parse(textBox2.Text);
+            }
         }
 
         private void ValidarCampos()
         {
-            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
+
+            if(string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
                 label1.Text = ("Preencha os campos corretamente!");
             }
