@@ -7,9 +7,9 @@ namespace CalculadoraWindowsForm
             InitializeComponent();
         }
 
-        public float numero1;
-        public float numero2;
-        public float resultado;
+        private float numero1;
+        private float numero2;
+        private float resultado;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -23,51 +23,53 @@ namespace CalculadoraWindowsForm
 
         private void btnSoma_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
+            ConverterValoresFloat();
             resultado = Somar(numero1, numero2);
             label1.Text = $"{numero1} + {numero2} = {resultado}";
+            ValidarCampos();
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
+            
             resultado = Subtrair(numero1, numero2);
             label1.Text = $"{numero1} - {numero2} = {resultado}";
+            ValidarCampos();
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
             resultado = Multiplicar(numero1, numero2);
             label1.Text = $"{numero1} * {numero2} = {resultado}";
+            ValidarCampos();
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
             resultado = Dividir(numero1, numero2);
             label1.Text = $"{numero1} / {numero2} = {resultado}";
+            ValidarCampos();
         }
 
-        public static float Somar(float numero1, float numero2)
+        private static float Somar(float numero1, float numero2)
         {
             float resultado = numero1 + numero2;
             return resultado;
         }
 
-        public static float Subtrair(float numero1, float numero2)
+        private static float Subtrair(float numero1, float numero2)
         {
             float resultado = numero1 - numero2;
             return resultado;
         }
 
-        public static float Multiplicar(float numero1, float numero2)
+        private static float Multiplicar(float numero1, float numero2)
         {
             float resultado = numero1 * numero2;
             return resultado;
         }
 
-        public static float Dividir(float numero1, float numero2)
+        private static float Dividir(float numero1, float numero2)
         {
             float resultado = numero1 / numero2;
             return resultado;
@@ -84,10 +86,6 @@ namespace CalculadoraWindowsForm
             if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
                 label1.Text = ("Preencha os campos corretamente!");
-            }
-            else
-            {
-                ConverterValoresFloat();
             }
         }
     }
