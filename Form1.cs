@@ -55,7 +55,10 @@ namespace CalculadoraWindowsForm
 
         private void resetarCalculo_Click(object sender, EventArgs e)
         {
+            textBox1.Text = "";
+            textBox2.Text = "";
 
+            label1.Text = "";
         }
 
         private static float Somar(float numero1, float numero2)
