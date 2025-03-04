@@ -47,15 +47,15 @@ namespace CalculadoraWindowsForm
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            if (numero2 != 0)
-            {
-                ConverterValoresFloat();
-                resultado = Dividir(numero1, numero2);
-                label1.Text = $"{numero1} / {numero2} = {resultado}";
-            }
+            ConverterValoresFloat();
             if (numero2 == 0)
             {
                 label1.Text = "Não é possível dividir por zero!";
+            }
+            if (numero2 != 0)
+            {
+                resultado = Dividir(numero1, numero2);
+                label1.Text = $"{numero1} / {numero2} = {resultado}";
             }
 
             ValidarCampos();
